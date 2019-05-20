@@ -1,0 +1,77 @@
+
+    <!-- bootstrap css -->
+    
+
+<h1 i18n="Demo Angular|Relate to Quality Inspection title">Demo Angular</h1>
+<p-accordion>
+  <p-accordionTab header="Search filters" i18n-header="Search filters |Relate to Search filters title" [selected]="false">
+    <form [formGroup]="searchFormGroup" novalidate>
+      <div class="ui-grid ui-grid-responsive ui-grid-pad">
+        <div class="ui-grid-row padding-top-10">
+          <div class="ui-grid-col-6">
+            <div class="ui-grid-col-4">
+              <label i18n-text="firstName|Relate to First Name filter" id="lblfirstName" for="txtfirstName" text="First Name"
+              [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }">First Name</label>
+            </div>
+            <div class="ui-grid-col-8">
+              <!-- <input type="text" class="da-input-type-text" id="txtfirstName" name="txtfirstName" formControlName="firstName" /> -->
+              <p-autoComplete id="txtFirstName" name="txtFirstName" inputId="innerTxtFirstName" [suggestions]="filteredFirstNameSingle"
+                                (completeMethod)="filterFirstNameSingle($event)" formControlName="firstName"
+                                field="name" ></p-autoComplete>
+              <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                <div *ngIf="f.firstName.errors.required">First Name is required</div>
+            </div>
+            </div>
+          </div>
+          <div class="ui-grid-col-6">
+            <div class="ui-grid-col-4">
+              <label i18n-text="Gender|Relate to Gender filter" id="lblGender" for="txtGender" text="Gender">Gender</label>
+            </div>
+            <div class="ui-grid-col-8">
+              <p-dropdown id="txtGender" formControlName="gender" [options]=listGender placeholder="Select a gender" i18n-placeholder="Select a gender|Relate to Select Gender"></p-dropdown>
+            </div>
+          </div>
+        </div>
+
+       <!--  <div class="ui-grid-row padding-top-10">
+          <div class="ui-grid-col-6">
+            <div class="ui-grid-col-4 text-right">
+              <label i18n-text="Fecha Inicial|Relate to Fecha Inicial filter" id="lblFecha Inicial" for="dtFechaInicial" text="Fecha Inicial"></label>
+            </div>
+            <div class="ui-grid-col-4">
+              <p-calendar id="calFechaInicial" dataType="date" dateFormat="d M yy" [showIcon]="true" formControlName="fechaInicial" (onSelect)="onSelectMethod($event, 'fechaInicial')"></p-calendar>
+              <br>
+              <span class="error" *ngIf="errMsgsDates.invalidFechaInicial" i18n="!Formato invalido.|Relate to Format Date validation">!Formato invalido.</span>
+              <span class="error" *ngIf="errMsgsDates.invalidGreaterThanFechaInicial" i18n="La fecha inicial no puede ser mayor que la fecha final.|Relate to Inspection Date validation">La fecha inicial no puede ser mayor que la fecha final.</span>
+            </div>
+            <div class="ui-grid-col-4">
+              <p-calendar id="calFechaFinal" dataType="date" dateFormat="d M yy" [showIcon]="true" formControlName="fechaFinal" (onSelect)="onSelectMethod($event, 'fechaFinal')"></p-calendar>
+              <br>              
+              <span class="error" *ngIf="errMsgsDates.invalidFechaFinal" i18n="!Formato invalido.|Relate to Format Date validation">!Formato invalido.</span>
+            </div>
+          </div>
+        </div> -->
+        
+        <div class="ui-grid-row">
+          <div class="ui-grid-col-12">
+            <br>
+            <br>
+            <hr/>
+          </div>
+        </div>
+        <div class="ui-grid-row padding-top-5">
+          <div class="ui-grid-col-12 text-right">
+            <p-button type="button" style="margin-right:20px" id="btnSearchRequest" (click)="onSubmit()" label="Search" i18n-text="Search|Relate to Search Button for filter"></p-button>
+            <p-button type="button" id="btnResetRequest" (click)="onReset()" label="Reset" i18n-text="Reset|Relate to Reset Button for Fflter"></p-button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </p-accordionTab>
+</p-accordion>
+
+
+<!-- Fill value translate for demoangular marca -->
+<input type="hidden" value="None" i18n-value="NONE" id="NONE" />
+<input type="hidden" value="Female" i18n-value="FEMALE" id="FEMALE" />
+<input type="hidden" value="Male" i18n-value="MALE" id="MALE" />

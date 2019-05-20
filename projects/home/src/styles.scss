@@ -1,0 +1,298 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('//use.fontawesome.com/releases/v4.7.0/fonts/fontawesome-webfont.eot');
+    src: url('//use.fontawesome.com/releases/v4.7.0/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('//use.fontawesome.com/releases/v4.7.0/fonts/fontawesome-webfont.woff2') format('woff2'), url('//use.fontawesome.com/releases/v4.7.0/fonts/fontawesome-webfont.woff') format('woff'), url('//use.fontawesome.com/releases/v4.7.0/fonts/fontawesome-webfont.ttf') format('truetype'), url('//use.fontawesome.com/releases/v4.7.0/fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+starwars,
+starwars .ui-widget {
+    line-height: normal !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.da-container {
+    color: #515151;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.ui-grid.ui-grid-pad>.ui-grid-row>div {
+    padding: 0px !important;
+}
+
+a:visited,
+a:hover,
+a:link {
+    text-decoration: none;
+}
+
+
+/* General Styles */
+
+.padding-top-5 {
+    padding-top: 5px;
+}
+
+.padding-top-10 {
+    padding-top: 10px;
+}
+
+.padding-top-20 {
+    padding-top: 20px !important;
+}
+
+.padding-top-30 {
+    padding-top: 30px !important;
+    display: block;
+}
+
+.padding-top-50 {
+    padding-top: 50px !important;
+    display: block;
+}
+
+.padding-bottom-5 {
+    padding-bottom: 5px !important;
+}
+
+.padding-bottom-15 {
+    padding-bottom: 15px !important;
+}
+
+.padding-left-15 {
+    padding-left: 15px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.margin-left-15 {
+    margin-left: 15px;
+}
+
+.margin-left-10 {
+    margin-left: 10px;
+}
+
+.margin-left-20 {
+    margin-left: 20px;
+}
+
+.margin-left-5 {
+    margin-top: 5px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-top-25 {
+    margin-top: 25px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-25 {
+    margin-bottom: 25px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.margin-botttom-40 {
+    margin-bottom: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+.ANXLabel,
+.ANXFormLabel {
+    color: #767676;
+}
+
+.ui-inputtext.ui-state-focus,
+.ui-inputtext:focus,
+.ui-checkbox.ui-state-focus,
+.ui-checkbox.focus {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.icon-da-info {
+    width: 13px;
+    height: 22px;
+    vertical-align: middle;
+    font-size: 13px;
+    float: left;
+    cursor: pointer;
+    margin-left: 15px;
+    color: #636363 !important;
+    -webkit-transform: rotate(180deg);
+    /* Safari and Chrome */
+    -moz-transform: rotate(180deg);
+    /* Firefox */
+    -ms-transform: rotate(180deg);
+    /* IE 9 */
+    -o-transform: rotate(180deg);
+    /* Opera */
+    transform: rotate(180deg);
+}
+
+.error {
+    font-size: 10px;
+    color: red;
+    float: left;
+}
+
+.ui-chkbox-icon {
+    content: "\f00c" !important;
+}
+
+textarea:focus,
+input {
+    box-shadow: none !important;
+    outline: none;
+}
+
+.title {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0px 0px 0px;
+}
+
+.ui-autocomplete-input {
+    border-radius: 0 !important;
+}
+
+.titlePartner {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+h2 {
+    padding: 0px !important;
+}
+
+.show {
+    display: block !important;
+    color: #363636 !important;
+}
+
+.hide {
+    display: none !important;
+    color: #FFFFFF !important;
+}
+
+.an-input-type-text-error {
+    border: 1px solid #cc0000 !important;
+}
+
+.an-input-type-text-error+span:after,
+p-dropdown.dropdown-error+span:after {
+    font-family: 'SAP-icons' !important;
+    font-style: normal !important;
+    content: "\e201" !important;
+    color: #cc0000;
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.an-input-type-text-error+span.width-70 {
+    width: 70px !important;
+    display: block;
+}
+
+.width-70 {
+    width: 70px !important;
+}
+
+.dropdown-error .ui-dropdown {
+    border: 1px solid #cc0000 !important;
+}
+
+.error-field-fiter {
+    width: 200px;
+    display: block !important;
+    cursor: pointer;
+}
+
+.error-field-valuation {
+    width: 70px;
+    display: block !important;
+    cursor: pointer;
+}
+
+.float-left {
+    float: left;
+}
+
+.background-an {
+    background-color: #fcfcfc;
+}
+
+.display-block {
+    display: block !important;
+}
+
+an-label-form.warning label {
+    color: #cc0000 !important;
+    font-size: 14px !important;
+}
+
+.error-valuation {
+    display: block !important;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+.fa-2x {
+    font-size: 2.5em !important;
+}
+
+.btnAslink {
+    border: 0px;
+    background-color: #FFFFFF;
+    color: #00679E;
+    cursor: pointer;
+}
+
+.btnAslink:hover {
+    border: 0px;
+    background-color: #FFFFFF;
+    color: #199DE0;
+    cursor: pointer;
+}
+
+.tbl-col {
+    overflow-wrap: break-word;
+    word-break: keep-all;
+}

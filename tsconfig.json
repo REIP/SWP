@@ -17,6 +17,20 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "swp-common": [
+        "dist/swp-common"
+      ],
+      "swp-common/*": [
+        "dist/swp-common/*"
+      ],
+      "swp-service": [
+        "dist/swp-service"
+      ],
+      "swp-service/*": [
+        "dist/swp-service/*"
+      ]
+    }
   }
 }

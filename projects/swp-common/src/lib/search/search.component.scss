@@ -1,0 +1,222 @@
+da-filter h1 {
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: #363636;
+}
+
+.daSearch {
+    margin-top: 4px;
+    display: block;
+}
+
+.daSearch .ui-accordion-header {
+    margin-top: 0px !important;
+    border: 0px!important;
+}
+
+.daSearch .ui-accordion-content,
+.daSearch .ui-accordion-header {
+    background-color: #f5f5f5 !important;
+}
+
+.daSearch .ui-accordion-header a:link {
+    color: #515151 !important;
+    font-size: 18px;
+    font-style: normal;
+    border-style: none;
+    background-color: transparent;
+    font-weight: 400;
+}
+
+p-calendar .ui-inputtext {
+    width: 150px !important;
+}
+
+p-calendar .ui-calendar button {
+    height: 28px;
+}
+
+
+/*DropDown*/
+
+.ui-dropdown {
+    width: 200px !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.ui-dropdown .ui-inputtext {
+    margin: 0px !important;
+}
+
+.ui-dropdown-panel .ui-dropdown-list {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.ui-dropdown .ui-dropdown-item {
+    font-size: 14px !important;
+    color: #363636 !important;
+    padding: 5px 0px 5px 20px !important;
+}
+
+.ui-dropdown .ui-dropdown-trigger {
+    border-top: 1px solid #ACD4ED !important;
+    border-bottom: 1px solid #ACD4ED !important;
+    border-right: 1px solid #ACD4ED !important;
+    border-radius: 0px !important;
+    border-left: none !important;
+}
+
+.ui-dropdown .fa-caret-down::before {
+    content: "\f107" !important;
+}
+
+.ui-state-highlight {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    font-weight: bold !important;
+}
+
+
+/*Tooltip*/
+
+.ui-tooltip {
+    background-color: #FFFFFF !important;
+    opacity: 1;
+}
+
+.ui-tooltip-text {
+    font-size: 13px;
+    padding: 15px 20px;
+}
+
+
+/*Checkbox*/
+
+.fa-check::before {
+    font-family: 'SAP-icons' !important;
+    font-style: normal !important;
+    content: "\e05b" !important;
+}
+
+.ui-chkbox .ui-chkbox-box {
+    background-color: #FFFFFF !important;
+    width: 22px !important;
+    height: 22px;
+}
+
+.ui-chkbox .ui-chkbox-icon {
+    color: #0079ad !important;
+    cursor: pointer !important;
+    font-size: 21px !important;
+    line-height: 15px !important;
+}
+
+.ui-chkbox-box {
+    border: 1px solid #ACD4ED !important;
+    background-color: #FFFFFF;
+    width: 22px !important;
+    height: 22px !important;
+}
+
+.ui-chkbox-box:hover {
+    border: 1px solid #199DE0;
+    background-color: #F5F5F5;
+}
+
+.ui-chkbox-label {
+    font-size: 13px;
+    color: #767676;
+}
+
+hr {
+    box-sizing: content-box;
+    background: none repeat scroll 0 0 #D7D7D7;
+    border: 0 none;
+    height: 1px;
+}
+
+.da-input-type-text,
+.ui-inputtext {
+    height: 29px;
+    border: 1px solid #ACD4ED !important;
+    background-color: #FFFFFF;
+    border-radius: 0px;
+    font-size: 13px !important;
+    color: #969696 !important;
+    padding: 4px 5px;
+    font-weight: normal;
+    width: 200px;
+    float: left;
+}
+
+p-accordiontab .ui-accordion-header>.fa-caret-right,
+p-accordiontab .ui-accordion-header>.fa-caret-down {
+    font-size: 20px;
+}
+
+p-dropdown .ui-dropdown .ui-dropdown-trigger>.fa-caret-down {
+    font-size: 28px;
+    color: #767676!important;
+    margin-top: 0px !important;
+    margin-left: -15px !important;
+    padding: 0px;
+}
+
+#txtSupplier,
+#txtCustomer {
+    display: block !important;
+}
+
+
+.an-button-primary,
+.an-button-primary:visited {
+    background: #199DE0;
+    border: 1px solid #199DE0;
+    height: 36px;
+    cursor: pointer;
+    padding: 0px 30px;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    border-radius: 0px;
+    color: #FFFFFF;
+}
+
+.an-button-primary:hover {
+    background: #065D9C;
+    border: 1px solid #065D9C;
+}
+
+.an-button-secondary,
+.an-button-secondary:visited {
+    background: #FFFFFF;
+    border: 1px solid #0076CB;
+    height: 36px;
+    cursor: pointer;
+    padding: 0px 30px;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    border-radius: 0px;
+    color: #0076CB;
+}
+
+.an-button-secondary:hover {
+    background: #0076CB;
+    border: 1px solid #0076CB;
+    color: #FFFFFF;
+}
+
+.invalid-feedback {
+color: red;
+font-size: 11px;
+text-align: left;
+position: absolute;
+margin-top: 5px;
+}

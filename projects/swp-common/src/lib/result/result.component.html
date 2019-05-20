@@ -1,0 +1,18 @@
+<p-table [value]="resultSearchCriteria">
+  <ng-template pTemplate="header">
+      <tr>
+          <th>Name</th>
+          <th>Height</th>
+          <th>Mass</th>
+          <th>Created</th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-people>
+      <tr>
+          <td>{{people.name}}</td>
+          <td>{{people.height}}</td>
+          <td>{{people.mass}}</td>
+          <td>{{people.created}}</td>
+      </tr>
+  </ng-template>
+</p-table>

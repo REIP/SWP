@@ -22,9 +22,9 @@ module.exports = function (config) {
       reports: ['html', 'lcovonly'],
       fixWebpackSourcePaths: true
     },
-    //reporters: ['progress', 'kjhtml'],
-    reporters: ['mocha', 'kjhtml', 'junit'],
-
+    reporters: ['mocha','kjhtml', 'junit'],
+    // ,'progress', 'kjhtml'
+    
     mochaReporter: {
       colors: {
         success: 'blue',
@@ -40,6 +40,7 @@ module.exports = function (config) {
       },
     },
 
+
     // the default configuration 
     //Local env
     /* junitReporter: {
@@ -54,17 +55,16 @@ module.exports = function (config) {
 
     //Jenkins env
     junitReporter: {
-      outputFile: '../report/test-results.xml',
+      outputFile: '../report/test-results-swp-service.xml',
       useBrowserName: false,
     },
-
+    
     //Local env
-    /* port: 9876,
+/*     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
-    */
+    browsers: ['Chrome'], */
 
     //Jenkins env
     customLaunchers: {
@@ -78,14 +78,14 @@ module.exports = function (config) {
         ]
       }
     },
-
-    logLevel: config.LOG_INFO,
-
+    
     //Jenkins env
+    browsers: ['ChromeHeadless'],
+    
+     //Jenkins env
     singleRun: true
 
-    //Local env
-    //singleRun: false
-
-  });
+     //Local env
+     //singleRun: false
+  });  
 };

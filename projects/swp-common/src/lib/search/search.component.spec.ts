@@ -67,7 +67,7 @@ describe('SearchComponent', () => {
     expect(component).toBeTruthy();
   });  */
 
-  it('Entering value in input controls and emit output events', () => {
+  it('Entering value in input control and search to emit output events', () => {
 
     const mockFirstName = {
       "name": "Luke Skywalker",
